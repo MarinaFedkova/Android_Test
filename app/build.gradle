@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "ru.netology.newtest"
-        minSdkVersion 25
+        minSdkVersion 28
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -43,6 +43,7 @@ dependencies {
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation fileTree(dir: 'C:\\Users\\MainAdmin\\Desktop\\Java_Binding_1_1\\WolframAlphaJavaLibrary', include: ['*.aar', '*.jar'], exclude: [])
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
